@@ -1,0 +1,21 @@
+{
+  "name": "instapraca",
+  "version": "0.0.1",
+  "authors": [
+    "Felipe Fernandes <ripcorp@gmail.com>"
+  ],
+  "main": "main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap" : "latest",
+    "jquery-instagram": "~0.3.1",
+    "isotope": "~2.2.1"
+  }
+}

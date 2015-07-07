@@ -1,0 +1,62 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;			
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  float: left;
+  width: 170px;
+  height: 170px;
+}
+
+.grid-item--height2 { height: 200px; width: 200px; }
+
+.instagram-placeholder img {
+	width: 100%;
+		height: auto;
+}
+
+.navbar {
+	background: url('../images/bbg.jpg');
+	color: white;
+	margin-bottom: 0;
+	padding: 15px 0;;
+}
+
+.navbar span.ht {
+	font-family: 'Lobster', cursive;
+	color: white;
+	font-size: 20px;
+	color: #00adef;
+}
+
+.navbar span.ht > span {
+	font-size: 40px;
+	color: #273382;
+}
+
+.navbar .hashtag {
+	text-align: right;
+}
+
+.footer {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	border-top: 1px solid #a3a3a3;
+	text-align: center;
+	background: white;
+}
