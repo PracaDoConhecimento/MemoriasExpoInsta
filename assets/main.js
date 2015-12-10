@@ -1,15 +1,17 @@
 // main.js
 var numElements = 0;
+var SETUP_CID = "fd210a3d496047b0ab38826f67155865"
+var SETUP_HASHTAG = "circulandomemorias";
 
 function createPhotoElement(photo) {
-  var randomNumber = Math.floor(Math.random() * 10) + 1;  
+  var randomNumber = Math.floor(Math.random() * 10) + 1;
   var hRand = Math.random();
   var heightClass = hRand > 0.85 ? 'grid-item--height3' : hRand > 0.5 ? 'grid-item--height2' : '';
   var innerHtml = $('<img>')
-    .addClass('instagram-image')    
+    .addClass('instagram-image')
     .attr('src', photo.images.low_resolution.url);
 
-  innerHtml = $('<a>')    
+  innerHtml = $('<a>')
     .attr('target', '_blank')
     .attr('href', photo.link)
     .append(innerHtml);
@@ -32,8 +34,8 @@ function didLoadInstagram(event, response) {
 }
 
 function getInstagramPhotos() {
-	var CLIENT_ID = "fd210a3d496047b0ab38826f67155865",
-    	hashtag = "doglovers";
+	var CLIENT_ID = SETUP_CID,
+    	hashtag = SETUP_HASHTAG;
 
 	$('.instagram.tag').on('didLoadInstagram', didLoadInstagram);
 	$('.instagram.tag').instagram({
@@ -44,7 +46,7 @@ function getInstagramPhotos() {
 }
 
 
-$(document).ready(function() {    
+$(document).ready(function() {
 
 	var $grid = $('.grid'),
       $removeElement,
@@ -60,7 +62,7 @@ $(document).ready(function() {
   		  masonry: {
   		  	columnWidth: 170
   		  }
-  		});      
+  		});
     }, 3000);
 
     //depois de 15s faz refresh na página
@@ -69,7 +71,7 @@ $(document).ready(function() {
           opacity: 0
       }, 1000, function() {
         location.reload();
-      });      
+      });
     }, 100000);
 
 });

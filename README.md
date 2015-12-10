@@ -13,10 +13,10 @@ uma hashtag específica.
   Você vai precisar configurar um CLIENT_ID do seu usuário do Instagram,
   e também definir a hasgtag de captura.
 
-  Ambas configurações estão no arquivo **'main.js'**
+  Ambas configurações estão no arquivo **'/assets/main.js'**
 
-  `var CLIENT_ID = "fd210a3d496047b0ab38826f67155865",`
-  `hashtag = "doglovers";`
+  `var SETUP_CID = "fd210a3d496047b0ab38826f67155865"`
+  `var SETUP_HASHTAG = "circulandomemorias";`
 
 ####Personalizações
  Personalize o projeto alterando as imagens **bbg.jpg** e **logo-memorias.png**

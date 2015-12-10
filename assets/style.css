@@ -1,8 +1,13 @@
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-          box-sizing: border-box;			
+          box-sizing: border-box;
 }
+
+body {
+  background-color: black;
+}
+
 
 .grid {
   max-width: 1200px;
@@ -29,6 +34,14 @@
 		height: auto;
 }
 
+.marcatexto {
+	box-shadow: 15px 0 0 0 #000, -5px 0 0 0 #000;
+	background: #000;
+	display: inline;
+	padding: 3px 0 !important;
+	position: relative;
+}
+
 .navbar {
 	background: url('../images/bbg.jpg');
 	color: white;
@@ -37,15 +50,15 @@
 }
 
 .navbar span.ht {
-	font-family: 'Lobster', cursive;
+	font-family: 'Lato', sans-serif;
 	color: white;
-	font-size: 20px;
-	color: #00adef;
+	font-size: 1.3em;
+	color: #d1b048;
 }
 
 .navbar span.ht > span {
-	font-size: 40px;
-	color: #273382;
+	font-size: 2em;
+	color: #fff;
 }
 
 .navbar .hashtag {
@@ -56,7 +69,35 @@
 	bottom: 0;
 	position: fixed;
 	width: 100%;
-	border-top: 1px solid #a3a3a3;
+	border-top: 1px solid #000;
 	text-align: center;
-	background: white;
+	background: #004548;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .logo,
+  .navbar .hashtag {
+    text-align: center;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
 }
