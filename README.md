@@ -15,7 +15,7 @@ uma hashtag específica.
 
   Ambas configurações estão no arquivo **'/assets/main.js'**
 
-  `var SETUP_CID = "fd210a3d496047b0ab38826f67155865"`
+  `var SETUP_CID = "{ SEU_CLIENT_ID }"`
   `var SETUP_HASHTAG = "circulandomemorias";`
 
 ####Personalizações
