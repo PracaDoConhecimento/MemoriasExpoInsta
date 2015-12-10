@@ -1,0 +1,128 @@
+/* ---- .grid-item ---- */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* ---- isotope ---- */
+
+.grid {
+  background: #000;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 10%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+
+@media (min-width:1500px){
+	#masonry-grid .gutter-sizer{width:4%;}
+	#masonry-grid .grid-item{width:22%;margin-bottom:4%;}
+}
+
+@media (max-width:1200px){
+	#masonry-grid .gutter-sizer{width:4%;}
+	#masonry-grid .grid-item{width:48%;}
+}
+
+@media (max-width:768px){
+	#masonry-grid .gutter-sizer{width:0%;}
+	#masonry-grid .grid-item{width:100%;}
+}
+
+
+
+body {
+  background-color: black;
+}
+
+.instagram-placeholder img {
+	width: 100%;
+		height: auto;
+}
+
+.marcatexto {
+	box-shadow: 15px 0 0 0 #000, -5px 0 0 0 #000;
+	background: #000;
+	display: inline;
+	padding: 3px 0 !important;
+	position: relative;
+}
+
+.navbar {
+	background: url('../../images/bbg.jpg');
+	color: white;
+	margin-bottom: 0;
+	padding: 15px 0;;
+}
+
+.navbar span.ht {
+	font-family: 'Lato', sans-serif;
+	color: white;
+	font-size: 1.3em;
+	color: #d1b048;
+}
+
+.navbar span.ht > span {
+	font-size: 2em;
+	color: #fff;
+}
+
+.navbar .hashtag {
+	text-align: right;
+}
+
+.footer {
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	border-top: 1px solid #000;
+	text-align: center;
+	background: #004548;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .logo,
+  .navbar .hashtag {
+    text-align: center;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
