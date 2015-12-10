@@ -1,7 +1,7 @@
 // main.js
 var numElements = 0;
 var SETUP_CID = "fd210a3d496047b0ab38826f67155865"
-var SETUP_HASHTAG = "circulandomemorias";
+var SETUP_HASHTAG = "doglovers"; //"circulandomemorias";
 
 function createPhotoElement(photo) {
   var randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -56,14 +56,18 @@ $(document).ready(function() {
     getInstagramPhotos();
 
     //delay para executar o Isotope
-    setTimeout(function(){
-  		$grid.isotope({
-  		  itemSelector: '.grid-item',
-  		  masonry: {
-  		  	columnWidth: 170
-  		  }
-  		});
-    }, 3000);
+    //setTimeout(function(){
+
+      // init Masonry after all images have loaded
+      var $grid = $('.grid').imagesLoaded( function() {
+        $grid.masonry({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          columnWidth: '.grid-sizer'
+        });
+      });
+
+    //}, 3000);
 
     //depois de 15s faz refresh na página
     setInterval(function(){

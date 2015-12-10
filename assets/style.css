@@ -1,17 +1,13 @@
+/* ---- .grid-item ---- */
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-body {
-  background-color: black;
-}
-
+/* ---- isotope ---- */
 
 .grid {
-  max-width: 1200px;
-  margin: 0 auto;
+  background: #000;
 }
 
 /* clear fix */
@@ -21,13 +17,42 @@ body {
   clear: both;
 }
 
+/* ---- .grid-item ---- */
+.grid-sizer,
 .grid-item {
-  float: left;
-  width: 170px;
-  height: 170px;
+  width: 16.65%;
 }
 
-.grid-item--height2 { height: 200px; width: 200px; }
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+
+@media (min-width:1500px){
+	#masonry-grid .gutter-sizer{width:4%;}
+	#masonry-grid .grid-item{width:22%;margin-bottom:4%;}
+}
+
+@media (max-width:1200px){
+	#masonry-grid .gutter-sizer{width:4%;}
+	#masonry-grid .grid-item{width:48%;}
+}
+
+@media (max-width:768px){
+	#masonry-grid .gutter-sizer{width:0%;}
+	#masonry-grid .grid-item{width:100%;}
+}
+
+
+
+body {
+  background-color: black;
+}
 
 .instagram-placeholder img {
 	width: 100%;
