@@ -15,7 +15,7 @@ uma hashtag específica.
 
   Ambas configurações estão no arquivo **'main.js'**
 
-  `var CLIENT_ID = "fd210a3d496047b0ab38826f67155865",`
+  `var CLIENT_ID = "NUMERO_HASH",`
   `hashtag = "doglovers";`
 
 ####Personalizações
