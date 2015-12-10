@@ -15,8 +15,8 @@ uma hashtag específica.
 
   Ambas configurações estão no arquivo **'/assets/main.js'**
 
-  `var SETUP_CID = "{ SEU_CLIENT_ID }"`
-  `var SETUP_HASHTAG = "circulandomemorias";`
+  `var SETUP_CID = "**SEU_CLIENT_ID**"`
+  `var SETUP_HASHTAG = "**circulandomemorias**";`
 
 ####Personalizações
  Personalize o projeto alterando as imagens **bbg.jpg** e **logo-memorias.png**
