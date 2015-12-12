@@ -14,8 +14,10 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap" : "latest",
+    "bootstrap": "latest",
     "jquery-instagram": "~0.3.1",
-    "isotope": "~2.2.1"
+    "isotope": "~2.2.1",
+    "imagesloaded": "~3.2.0",
+    "fancyBox": "~2.1.5"
   }
 }

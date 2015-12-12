@@ -1,7 +1,7 @@
 // main.js
 var numElements = 0;
 var SETUP_CID = "fd210a3d496047b0ab38826f67155865"
-var SETUP_HASHTAG = "doglovers"; //"circulandomemorias";
+var SETUP_HASHTAG = "circulandomemorias"; //"circulandomemorias";
 
 function createPhotoElement(photo) {
   var randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -10,11 +10,6 @@ function createPhotoElement(photo) {
   var innerHtml = $('<img>')
     .addClass('instagram-image')
     .attr('src', photo.images.low_resolution.url);
-
-  innerHtml = $('<a>')
-    .attr('target', '_blank')
-    .attr('href', photo.link)
-    .append(innerHtml);
 
   return $('<div>')
     .addClass('instagram-placeholder')

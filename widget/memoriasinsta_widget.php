@@ -48,7 +48,7 @@ class My_Widget extends WP_Widget {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
 		}
     ?>
-    <iframe src="http://pracadoconhecimento.com.br/memoriasinsta/widget/" width="100%" height=""></iframe>
+    <iframe src="http://pracadoconhecimento.com.br/memoriasinsta/widget/" width="100%" height="255" frameborder="0"></iframe>
 
     <?php
 		echo $args['after_widget'];

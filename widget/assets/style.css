@@ -77,17 +77,23 @@ body {
 .navbar span.ht {
 	font-family: 'Lato', sans-serif;
 	color: white;
-	font-size: 1.3em;
+	font-size: 0.8em;
 	color: #d1b048;
 }
 
 .navbar span.ht > span {
 	font-size: 2em;
 	color: #fff;
+  margin-left: 8px;
 }
 
 .navbar .hashtag {
 	text-align: right;
+}
+
+.navbar .logo img {
+  width: 100%;
+  height: auto;
 }
 
 .footer {
