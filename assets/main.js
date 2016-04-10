@@ -1,6 +1,6 @@
 // main.js
 var numElements = 0;
-var SETUP_CID = "fd210a3d496047b0ab38826f67155865"
+var SETUP_CID = "SEU_ID_VAI_AQUI"
 var SETUP_HASHTAG = "doglovers"; //"circulandomemorias";
 
 function createPhotoElement(photo) {
